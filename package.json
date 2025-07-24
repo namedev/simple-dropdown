@@ -1,0 +1,25 @@
+{
+  "name": "simple-dropdown",
+  "version": "1.20.1",
+  "private": true,
+  "description": "A Native selected options dropdown alike.",
+  "keywords": [
+    "simple-dropdown",
+    "dropdown",
+    "selected"
+    "options"
+    "pure",
+    "pure js"
+    "pure-js"
+  ],
+  "homepage": "https://github.com/namedev/simple-dropdown/#readme",
+  "bugs": {
+    "url": "https://github.com/namedev/simple-dropdown/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/namedev/simple-dropdown.git"
+  },
+  "license": "MIT",
+  "author": "namedev <kasithas.songsiri@gmail.com>"
+}
