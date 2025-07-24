@@ -27,7 +27,7 @@ function Dropdown(element) {
         /**
          * Version of the dropdown
          */
-        version: '1.20.0',
+        version: '1.20.1',
         
         /**
          *
@@ -175,10 +175,12 @@ function Dropdown(element) {
                 const selectOption = selectElement.querySelector(
                     'option[value="' + selectedValue + '"]'
                 );
-
+                
                 if (selectOption) {
                     selectElement.value = selectedValue;
                     selectElement.classList.add('selected');
+                    this.clearOptionsSelected();
+                    option.classList.add('selected');
                 }
 
                 checkbox.checked = false;
@@ -215,6 +217,9 @@ function Dropdown(element) {
             checkbox.checked = false;
             this.open = false;
             this._optionElement.innerHTML = '';
+        },
+        clearOptionsSelected: function() {
+            this._options.forEach((option) => { option.classList.remove('selected')});
         }
     };
 
